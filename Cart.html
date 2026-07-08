@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Your Cart</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+Eco<span>Cart</span>
+</div>
+
+</header>
+
+
+
+<div class="checkout">
+
+
+<h1>
+Your Shopping Cart
+</h1>
+
+
+<div id="cart">
+
+</div>
+
+
+<a class="btn"
+href="checkout.html">
+
+Proceed to Checkout
+
+</a>
+
+
+</div>
+
+
+
+<script>
+
+
+let item =
+localStorage.getItem("cartItem");
+
+
+if(item){
+
+document.getElementById("cart").innerHTML=
+
+`
+<h2>${item}</h2>
+
+<p>Quantity: 1</p>
+
+<p>Total: £35</p>
+
+`;
+
+}
+
+else{
+
+
+document.getElementById("cart").innerHTML=
+
+"Your cart is empty";
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
