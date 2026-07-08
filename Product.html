@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Product Details</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+Eco<span>Cart</span>
+</div>
+
+
+<a href="cart.html">
+🛒 Cart
+</a>
+
+</header>
+
+
+
+<div class="product-detail">
+
+
+<img src="images/hoodie.jpg">
+
+
+<div>
+
+<h1>
+Eco Hoodie
+</h1>
+
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+
+
+<h2>
+£35
+</h2>
+
+
+<p>
+Comfortable hoodie made using sustainable recycled fibres.
+Designed for everyday wear.
+</p>
+
+
+<button class="btn"
+onclick="addToCart()">
+
+Add to Cart
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+function addToCart(){
+
+localStorage.setItem(
+"cartItem",
+"Eco Hoodie"
+);
+
+
+alert(
+"Eco Hoodie added to cart!"
+);
+
+
+}
+
+</script>
+
+
+</body>
+
+</html>
